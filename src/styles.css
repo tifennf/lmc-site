@@ -1,0 +1,27 @@
+:root {
+    --nav-color: hsl(210, 10%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body, #svelte-root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    padding-left: 1rem;
+}
