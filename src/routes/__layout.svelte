@@ -1,10 +1,11 @@
 <script>
 	import '$src/styles.css';
+	import 'carbon-components-svelte/css/g10.css';
 </script>
 
 <main>
 	<nav>
-		<a class="home-link" href="/">Acceuil</a>
+		<h1><a class="home-link" href="/">Acceuil</a></h1>
 		<h1>Guide Jussieu</h1>
 		<ul>
 			<li>
@@ -23,7 +24,7 @@
 		<h1>Assos Jussieu</h1>
 		<ul>
 			<li>
-				<a href="/">Assos matière</a>
+				<a href="/assos-matiere">Assos matière</a>
 			</li>
 			<li>
 				<a href="/">Assos cursus</a>
@@ -71,12 +72,29 @@
 		grid-column-start: 2;
 	}
 	h1 {
-		font-size: 1rem;
+		font-size: var(--h1-size);
 		margin: 0;
 	}
 	ul {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: unset;
+	}
+
+	ul a {
+		font-size: var(--h3-size);
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	li {
+		padding-left: 1rem;
 	}
 </style>
